@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>892</width>
+    <height>587</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <layout class="QGridLayout" name="gridLayout">
+        <item row="1" column="2">
+         <widget class="QLabel" name="label_4">
+          <property name="text">
+           <string>m</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="3">
+         <spacer name="horizontalSpacer">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="3" column="9">
+         <widget class="QPushButton" name="pushButton_simulation">
+          <property name="text">
+           <string>Simulation</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0">
+         <widget class="QLabel" name="label">
+          <property name="text">
+           <string>Height</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="7">
+         <spacer name="horizontalSpacer_2">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="label_2">
+          <property name="text">
+           <string>Width</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="6">
+         <widget class="QLabel" name="label_6">
+          <property name="text">
+           <string>m</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="5">
+         <widget class="QLineEdit" name="lineEdit_Equipment"/>
+        </item>
+        <item row="1" column="4">
+         <widget class="QLabel" name="label_3">
+          <property name="text">
+           <string>Equipment</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QLineEdit" name="lineEdit_width">
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="1">
+         <widget class="QLineEdit" name="lineEdit_Height">
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="9">
+         <widget class="QPushButton" name="pushButton_plan">
+          <property name="text">
+           <string>Plan</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="2">
+         <widget class="QLabel" name="label_5">
+          <property name="text">
+           <string>m</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="8">
+         <widget class="QPushButton" name="pushButton_clear">
+          <property name="text">
+           <string>Clear</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QGraphicsView" name="graphicsView"/>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>892</width>
+     <height>25</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar_Right">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>RightToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionReset"/>
+   <addaction name="actionBack"/>
+   <addaction name="actionForward"/>
+   <addaction name="actionShift"/>
+   <addaction name="actionPause"/>
+   <addaction name="actionMappingMode"/>
+   <addaction name="actionZoom"/>
+   <addaction name="actionChangeView"/>
+   <addaction name="actionPanningMode"/>
+   <addaction name="actionConfiguration"/>
+   <addaction name="actionSetPA"/>
+   <addaction name="actionSetPB"/>
+   <addaction name="actionStartHeadland"/>
+   <addaction name="actionFinishHeadland"/>
+   <addaction name="actionPauseCurveLog"/>
+   <addaction name="actionNextAB"/>
+   <addaction name="actionFreeFormGreen"/>
+   <addaction name="actionFreeFormRed"/>
+  </widget>
+  <widget class="QToolBar" name="toolBar_Left">
+   <property name="windowTitle">
+    <string>toolBar_2</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>LeftToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionInfo"/>
+   <addaction name="actionHelp"/>
+   <addaction name="actionCL"/>
+   <addaction name="actionMap"/>
+   <addaction name="actionGoBack"/>
+   <addaction name="actionPrev"/>
+   <addaction name="actionCancel"/>
+  </widget>
+  <action name="actionCancel">
+   <property name="icon">
+    <iconset resource="Source.qrc">
+     <normaloff>:/leftToolBar/img/Left ToolBar Icons/Cancel.png</normaloff>:/leftToolBar/img/Left ToolBar Icons/Cancel.png</iconset>
+   </property>
+   <property name="text">
+    <string>Cancel</string>
+   </property>
+  </action>
+  <action name="actionCL">
+   <property name="icon">
+    <iconset resource="Source.qrc">
+     <normaloff>:/leftToolBar/img/Left ToolBar Icons/CoverageLogging.png</normaloff>:/leftToolBar/img/Left ToolBar Icons/CoverageLogging.png</iconset>
+   </property>
+   <property name="text">
+    <string>CL</string>
+   </property>
+  </action>
+  <action name="actionGoBack">
+   <property name="icon">
+    <iconset resource="Source.qrc">
+     <normaloff>:/leftToolBar/img/Left ToolBar Icons/GoBack.png</normaloff>:/leftToolBar/img/Left ToolBar Icons/GoBack.png</iconset>
+   </property>
+   <property name="text">
+    <string>GoBack</string>
+   </property>
+  </action>
+  <action name="actionHelp">
+   <property name="icon">
+    <iconset resource="Source.qrc">
+     <normaloff>:/leftToolBar/img/Left ToolBar Icons/Help.png</normaloff>:/leftToolBar/img/Left ToolBar Icons/Help.png</iconset>
+   </property>
+   <property name="text">
+    <string>Help</string>
+   </property>
+  </action>
+  <action name="actionInfo">
+   <property name="icon">
+    <iconset resource="Source.qrc">
+     <normaloff>:/leftToolBar/img/Left ToolBar Icons/Info.png</normaloff>:/leftToolBar/img/Left ToolBar Icons/Info.png</iconset>
+   </property>
+   <property name="text">
+    <string>Info</string>
+   </property>
+  </action>
+  <action name="actionMap">
+   <property name="icon">
+    <iconset resource="Source.qrc">
+     <normaloff>:/leftToolBar/img/Left ToolBar Icons/Map.png</normaloff>:/leftToolBar/img/Left ToolBar Icons/Map.png</iconset>
+   </property>
+   <property name="text">
+    <string>Map</string>
+   </property>
+  </action>
+  <action name="actionPrev">
+   <property name="icon">
+    <iconset resource="Source.qrc">
+     <normaloff>:/leftToolBar/img/Left ToolBar Icons/PrevMenu.png</normaloff>:/leftToolBar/img/Left ToolBar Icons/PrevMenu.png</iconset>
+   </property>
+   <property name="text">
+    <string>Prev</string>
+   </property>
+  </action>
+  <action name="actionBack">
+   <property name="icon">
+    <iconset resource="Source.qrc">
+     <normaloff>:/rightToolBar/img/Right ToolBar Icons/Back.png</normaloff>:/rightToolBar/img/Right ToolBar Icons/Back.png</iconset>
+   </property>
+   <property name="text">
+    <string>Back</string>
+   </property>
+  </action>
+  <action name="actionChangeView">
+   <property name="icon">
+    <iconset resource="Source.qrc">
+     <normaloff>:/rightToolBar/img/Right ToolBar Icons/Change views.png</normaloff>:/rightToolBar/img/Right ToolBar Icons/Change views.png</iconset>
+   </property>
+   <property name="text">
+    <string>ChangeView</string>
+   </property>
+  </action>
+  <action name="actionConfiguration">
+   <property name="icon">
+    <iconset resource="Source.qrc">
+     <normaloff>:/rightToolBar/img/Right ToolBar Icons/Configuration.png</normaloff>:/rightToolBar/img/Right ToolBar Icons/Configuration.png</iconset>
+   </property>
+   <property name="text">
+    <string>Configuration</string>
+   </property>
+  </action>
+  <action name="actionFinishHeadland">
+   <property name="icon">
+    <iconset resource="Source.qrc">
+     <normaloff>:/rightToolBar/img/Right ToolBar Icons/FinishHeadland.png</normaloff>:/rightToolBar/img/Right ToolBar Icons/FinishHeadland.png</iconset>
+   </property>
+   <property name="text">
+    <string>FinishHeadland</string>
+   </property>
+  </action>
+  <action name="actionForward">
+   <property name="icon">
+    <iconset resource="Source.qrc">
+     <normaloff>:/rightToolBar/img/Right ToolBar Icons/Forward.png</normaloff>:/rightToolBar/img/Right ToolBar Icons/Forward.png</iconset>
+   </property>
+   <property name="text">
+    <string>Forward</string>
+   </property>
+  </action>
+  <action name="actionFreeFormGreen">
+   <property name="icon">
+    <iconset resource="Source.qrc">
+     <normaloff>:/rightToolBar/img/Right ToolBar Icons/FreeFormGreen.png</normaloff>:/rightToolBar/img/Right ToolBar Icons/FreeFormGreen.png</iconset>
+   </property>
+   <property name="text">
+    <string>FreeFormGreen</string>
+   </property>
+  </action>
+  <action name="actionFreeFormRed">
+   <property name="icon">
+    <iconset resource="Source.qrc">
+     <normaloff>:/rightToolBar/img/Right ToolBar Icons/FreeFormRed.png</normaloff>:/rightToolBar/img/Right ToolBar Icons/FreeFormRed.png</iconset>
+   </property>
+   <property name="text">
+    <string>FreeFormRed</string>
+   </property>
+  </action>
+  <action name="actionMappingMode">
+   <property name="icon">
+    <iconset resource="Source.qrc">
+     <normaloff>:/rightToolBar/img/Right ToolBar Icons/Mapping mode.png</normaloff>:/rightToolBar/img/Right ToolBar Icons/Mapping mode.png</iconset>
+   </property>
+   <property name="text">
+    <string>MappingMode</string>
+   </property>
+  </action>
+  <action name="actionNextAB">
+   <property name="icon">
+    <iconset resource="Source.qrc">
+     <normaloff>:/rightToolBar/img/Right ToolBar Icons/NextAB.png</normaloff>:/rightToolBar/img/Right ToolBar Icons/NextAB.png</iconset>
+   </property>
+   <property name="text">
+    <string>NextAB</string>
+   </property>
+  </action>
+  <action name="actionPanningMode">
+   <property name="icon">
+    <iconset resource="Source.qrc">
+     <normaloff>:/rightToolBar/img/Right ToolBar Icons/PanningMode.png</normaloff>:/rightToolBar/img/Right ToolBar Icons/PanningMode.png</iconset>
+   </property>
+   <property name="text">
+    <string>PanningMode</string>
+   </property>
+  </action>
+  <action name="actionPause">
+   <property name="icon">
+    <iconset resource="Source.qrc">
+     <normaloff>:/rightToolBar/img/Right ToolBar Icons/Pause.png</normaloff>:/rightToolBar/img/Right ToolBar Icons/Pause.png</iconset>
+   </property>
+   <property name="text">
+    <string>Pause</string>
+   </property>
+  </action>
+  <action name="actionPauseCurveLog">
+   <property name="icon">
+    <iconset resource="Source.qrc">
+     <normaloff>:/rightToolBar/img/Right ToolBar Icons/PauseCurveLog.png</normaloff>:/rightToolBar/img/Right ToolBar Icons/PauseCurveLog.png</iconset>
+   </property>
+   <property name="text">
+    <string>PauseCurveLog</string>
+   </property>
+  </action>
+  <action name="actionReset">
+   <property name="icon">
+    <iconset resource="Source.qrc">
+     <normaloff>:/rightToolBar/img/Right ToolBar Icons/Reset.png</normaloff>:/rightToolBar/img/Right ToolBar Icons/Reset.png</iconset>
+   </property>
+   <property name="text">
+    <string>Reset</string>
+   </property>
+  </action>
+  <action name="actionSetPA">
+   <property name="icon">
+    <iconset resource="Source.qrc">
+     <normaloff>:/rightToolBar/img/Right ToolBar Icons/SetPA.png</normaloff>:/rightToolBar/img/Right ToolBar Icons/SetPA.png</iconset>
+   </property>
+   <property name="text">
+    <string>SetPA</string>
+   </property>
+  </action>
+  <action name="actionSetPB">
+   <property name="icon">
+    <iconset resource="Source.qrc">
+     <normaloff>:/rightToolBar/img/Right ToolBar Icons/SetPB.png</normaloff>:/rightToolBar/img/Right ToolBar Icons/SetPB.png</iconset>
+   </property>
+   <property name="text">
+    <string>SetPB</string>
+   </property>
+  </action>
+  <action name="actionShift">
+   <property name="icon">
+    <iconset resource="Source.qrc">
+     <normaloff>:/rightToolBar/img/Right ToolBar Icons/Shift.png</normaloff>:/rightToolBar/img/Right ToolBar Icons/Shift.png</iconset>
+   </property>
+   <property name="text">
+    <string>Shift</string>
+   </property>
+  </action>
+  <action name="actionZoom">
+   <property name="icon">
+    <iconset resource="Source.qrc">
+     <normaloff>:/rightToolBar/img/Right ToolBar Icons/Zoom.png</normaloff>:/rightToolBar/img/Right ToolBar Icons/Zoom.png</iconset>
+   </property>
+   <property name="text">
+    <string>Zoom</string>
+   </property>
+  </action>
+  <action name="actionStartHeadland">
+   <property name="icon">
+    <iconset resource="Source.qrc">
+     <normaloff>:/rightToolBar/img/Right ToolBar Icons/startHeadland.png</normaloff>:/rightToolBar/img/Right ToolBar Icons/startHeadland.png</iconset>
+   </property>
+   <property name="text">
+    <string>StartHeadland</string>
+   </property>
+  </action>
+ </widget>
+ <tabstops>
+  <tabstop>lineEdit_width</tabstop>
+  <tabstop>lineEdit_Height</tabstop>
+  <tabstop>lineEdit_Equipment</tabstop>
+  <tabstop>pushButton_plan</tabstop>
+  <tabstop>pushButton_simulation</tabstop>
+  <tabstop>graphicsView</tabstop>
+ </tabstops>
+ <resources>
+  <include location="Source.qrc"/>
+ </resources>
+ <connections/>
+</ui>

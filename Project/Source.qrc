@@ -1,0 +1,40 @@
+<RCC>
+    <qresource prefix="/image">
+        <file>img/tractor.png</file>
+        <file>img/tractor90.png</file>
+        <file>img/tractor180.png</file>
+    </qresource>
+    <qresource prefix="/leftToolBar">
+        <file>img/Left ToolBar Icons/Cancel.png</file>
+        <file>img/Left ToolBar Icons/CoverageLogging.png</file>
+        <file>img/Left ToolBar Icons/GoBack.png</file>
+        <file>img/Left ToolBar Icons/Help.png</file>
+        <file>img/Left ToolBar Icons/Info.png</file>
+        <file>img/Left ToolBar Icons/Map.png</file>
+        <file>img/Left ToolBar Icons/PrevMenu.png</file>
+    </qresource>
+    <qresource prefix="/rightToolBar">
+        <file>img/Right ToolBar Icons/Back.png</file>
+        <file>img/Right ToolBar Icons/Change views.png</file>
+        <file>img/Right ToolBar Icons/Configuration.png</file>
+        <file>img/Right ToolBar Icons/FinishHeadland.png</file>
+        <file>img/Right ToolBar Icons/Forward.png</file>
+        <file>img/Right ToolBar Icons/FreeFormGreen.png</file>
+        <file>img/Right ToolBar Icons/FreeFormRed.png</file>
+        <file>img/Right ToolBar Icons/Mapping mode.png</file>
+        <file>img/Right ToolBar Icons/NextAB.png</file>
+        <file>img/Right ToolBar Icons/PanningMode.png</file>
+        <file>img/Right ToolBar Icons/Pause.png</file>
+        <file>img/Right ToolBar Icons/PauseCurveLog.png</file>
+        <file>img/Right ToolBar Icons/Reset.png</file>
+        <file>img/Right ToolBar Icons/SetPA.png</file>
+        <file>img/Right ToolBar Icons/SetPB.png</file>
+        <file>img/Right ToolBar Icons/Shift.png</file>
+        <file>img/Right ToolBar Icons/startHeadland.png</file>
+        <file>img/Right ToolBar Icons/Zoom.png</file>
+    </qresource>
+    <qresource prefix="/signalIcons">
+        <file>img/Signal Icons/Signals.gif</file>
+        <file>img/Signal Icons/USB signals.gif</file>
+    </qresource>
+</RCC>
